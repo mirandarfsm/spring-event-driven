@@ -104,23 +104,14 @@ jhipster:
     authentication:
       jwt:
         # This token must be encoded using Base64 (you can type `echo 'secret-key'|base64` on your command line)
-        base64-secret: NmI0MjlhOTYwYTQyYjc1ZTQ0ZWNhYTFlYmZmZGQ3NWE5ODQ4NzY5YjZiNTZkNTFiNGIyMTcxYTU4ZDE3NzE2NjFlNTZkY2E0NDJkMTJlMTNkM2M3NWU4Y2QzYjNmYzBlY2JlMmRlZjg4YzBmOGY4MGU1NjRlYTgyZWMzYzlmZGY=
+        base64-secret: ZmE4ZjQ5MGJhZTZkZmQ1MWMyOTMyNTAyNzMyYWI1YTU3NGJlYWM4Y2NlYmRjZDkwYjRkOWQ5MDU5NjkwMGY3OTI3N2Q3ZmYyMmJlNmU2MDcxNjM0ZTk3NGM5M2Q1NmJhZDhmNzk2MzhhYzRjYTQyMDk0Y2MzY2E2MTg0ZGVlM2Q=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
   metrics:
     logs: # Reports metrics in the logs
       enabled: true
       report-frequency: 60 # in seconds
-kafka:
-  bootstrap-servers: localhost:9092
-  consumer:
-    key.deserializer: org.apache.kafka.common.serialization.StringDeserializer
-    value.deserializer: org.apache.kafka.common.serialization.StringDeserializer
-    group.id: kafka
-    auto.offset.reset: earliest
-  producer:
-    key.serializer: org.apache.kafka.common.serialization.StringSerializer
-    value.serializer: org.apache.kafka.common.serialization.StringSerializer
+
 # ===================================================================
 # Application specific properties
 # Add your own application properties here, see the ApplicationProperties class
