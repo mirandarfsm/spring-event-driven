@@ -44,5 +44,11 @@
     "nativeLanguage": "pt-br",
     "languages": ["pt-br"],
     "blueprints": []
+  },
+  "generator-jhipster-spring-cloud-stream": {
+    "promptValues": {
+      "messageBrokerType": "RabbitMQ",
+      "rabbitMqNameOfMessage": "message"
+    }
   }
 }

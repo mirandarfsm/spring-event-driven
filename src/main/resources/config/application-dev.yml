@@ -83,6 +83,13 @@ spring:
     locator:
       discovery:
         enabled: true
+    cloud:
+      stream:
+        default:
+          contentType: application/json
+        bindings:
+          input:
+            destination: topic-jhipster
 
 server:
   port: 8080
